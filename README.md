@@ -19,8 +19,8 @@
 №|Название|Дедлайн сдачи|Ссылка на код
 ---|:---|---:|:---
 1.|[Виселица](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW1.md)|22.09 9:00|[HW1](https://github.com/kategavrishina/hw4prog2018/tree/master/HW1)
-2.|||
-3.|||
+2.|Краулер для газеты "Светлый путь"|HW2|
+3.|Типологическая анкета об употреблении феминитивов|HW3|
 4.|||
 5.|||
 6.|||
