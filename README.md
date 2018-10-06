@@ -15,7 +15,7 @@
 №|Название|Дедлайн сдачи|Ссылка на код
 ---|:---|---:|:---
 1.|[Виселица](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW1.md)|22.09 9:00|[HW1](https://github.com/kategavrishina/hw4prog2018/tree/master/HW1)
-2.|[JSON](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW2.md)|29.09 9:00|[HW2]()
+2.|[JSON](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW2.md)|06.10 9:00|[HW2](https://github.com/kategavrishina/hw4prog2018/blob/master/HW2/homework2.ipynb)
 3.|Краулер для газеты "Светлый путь"||HW3
 4.|Типологическая анкета об употреблении феминитивов||HW4
 5.|||
