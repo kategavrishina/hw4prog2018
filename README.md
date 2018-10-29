@@ -11,7 +11,7 @@
 ---|:---|---:|:---
 1.|[Виселица](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW1.md)|22.09 9:00|[HW1](https://github.com/kategavrishina/hw4prog2018/tree/master/HW1)
 2.|[JSON](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/HW2.md)|06.10 9:00|[HW2](https://github.com/kategavrishina/hw4prog2018/blob/master/HW2/homework2.ipynb)
-3.|[Проект](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/Project.ipynb), [ссылка на архив]()|29.10 10:00|[HW3](https://github.com/kategavrishina/hw4prog2018/tree/master/HW3)
+3.|[Проект](https://github.com/ancatmara/learnpython2018/blob/master/Homeworks/Project.ipynb), [ссылка на архив](https://drive.google.com/open?id=1vPc2H0d6wlG75tlyocCFjodIR-zLBqHU)|29.10 10:00|[HW3](https://github.com/kategavrishina/hw4prog2018/tree/master/HW3)
 4.|Типологическая анкета об употреблении феминитивов||HW4
 5.|||
 6.|||
