@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body class="container">
+<h1>Результаты поиска</h1>
+<p>Если вдруг Вам захотелось ещё раз взглянуть на анкету или
+            заполнить её за кого-нибудь из своих знакомых:
+        <a href="{{ url_for('form') }}"> обратно к форме</a></p>
+<table border="1" cellpadding="10" width="300"
+           class="table table-hover">
+            <thead>
+            <tr>
+                <th align="center">Имя</th>
+                <th align="center">Фамилия</th>
+                <th align="center">Пол</th>
+                <th align="center">Возраст</th>
+                <th align="center">Место жительства</th>
+                <th align="center">Ответ</th>
+            </tr>
+            </thead>
+            {% for row in all %}
+            <tbody>
+            <tr>
+                <td align="center">{{ row[0] }}</td>
+                <td align="center">{{ row[1] }}</td>
+                <td align="center">{{ row[2] }}</td>
+                <td align="center">{{ row[3] }}</td>
+                <td align="center">{{ row[4] }}</td>
+                <td align="center">{{ row[5] }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+	</table>
+</body>
+</html>

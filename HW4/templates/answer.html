@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Спасибо!</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Спасибо за потраченное время!</h1>
+        <p>Если вдруг Вам также хочется записать данные о Ваших друзьях
+            или членах семьи:
+            <a href="{{ url_for('form') }}"> обратно к
+                форме</a></p>
+        <p>Если Вы хотите узнать статистику по результатам опроса:
+            <a href="{{ url }}"> Вам сюда</a></p>
+        <p>Если Вам интересно посмотреть на все доступные данные об
+            информантах в структурированном формате json:
+            <a href="{{ url_1 }}"> нажмите сюда</a></p>
+        <p>Если Вы хотите найти какие-то конкретные данные по параметрам:
+            <a href="{{ url_2 }}"> перейдите к поиску</a></p>
+    </div>
+</body>
+
+</html>

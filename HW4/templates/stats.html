@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Статистика<small> (по данным <a href="{{ url_for('form') }}">
+            анкеты)</a></small></h1>
+        <img src="{{url_for('static', filename='plot1.png')}}"
+                height='30%' alt="Chart">
+        <img src="{{url_for('static', filename='plot2.png')}}"
+                height='30%' alt="Chart">
+        <img src="{{url_for('static', filename='plot3.png')}}"
+                height='30%' alt="Chart">
+        <img src="{{url_for('static', filename='plot4.png')}}"
+                height='30%' alt="Chart">
+        <h2>Таблица всех ответов ({{ length }})</h2>
+        <table border="1" cellpadding="10" width="300"
+           class="table table-hover">
+            <thead>
+            <tr>
+                <th align="center">Имя</th>
+                <th align="center">Фамилия</th>
+                <th align="center">Пол</th>
+                <th align="center">Возраст</th>
+                <th align="center">Место жительства</th>
+                <th align="center">Ответ</th>
+            </tr>
+            </thead>
+            {% for row in filereader %}
+            <tbody>
+            <tr>
+                <td align="center">{{ row[0] }}</td>
+                <td align="center">{{ row[1] }}</td>
+                <td align="center">{{ row[2] }}</td>
+                <td align="center">{{ row[3] }}</td>
+                <td align="center">{{ row[4] }}</td>
+                <td align="center">{{ row[5] }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+	</table>
+    </div>
+</body>
+</html>

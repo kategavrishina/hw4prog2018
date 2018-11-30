@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Не найдено</title>
+</head>
+<body class="container">
+<h1>Oops!</h1>
+<p>К сожалению, по Вашему запросу ничего не найдено. Попробуйте ещё раз: <a
+        href="{{ url_for('search') }}">поиск</a></p>
+<p>Если вдруг Вам захотелось ещё раз взглянуть на анкету или
+            заполнить её за кого-нибудь из своих знакомых:
+        <a href="{{ url_for('form') }}"> обратно к форме</a></p>
+</body>
+</html>

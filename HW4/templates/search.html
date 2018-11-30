@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+</head>
+<body class="container">
+<h1>Поиск</h1>
+<h3>Здесь Вы можете найти интересующие Вас данные.</h3>
+<p>Вы можете ввести запрос в текстовое поле, если хотите найти конкретного
+    информанта (фамилия или имя) или конкретный вид ответа ("кексы",
+    "капкейки", "маффины" или "другое"). Также Вы можете ограничить поиск по
+    полу, возрасту и месту жительства информанта (можно одновременно).
+    Пожалуйста, не отправляйте пустую форму. Если хотите посмотреть на все
+    результаты, лучше перейдите на страницу <a href="{{ url_for('stats') }}">
+        статистики</a>.</p>
+<p>Если вдруг Вам захотелось ещё раз взглянуть на анкету или
+            заполнить её за кого-нибудь из своих знакомых:
+        <a href="{{ url_for('form') }}"> обратно к форме</a></p>
+<form class="form-horizontal col-sm-2">
+    <div class="form-group">
+        <label>Запрос:</label>
+        <div>
+            <input type="text" name="question"
+                   placeholder="Введите запрос" maxlength="15">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Пол:</label>
+        <div>
+            <input type="radio" name="sex" value="жен">женский<br>
+            <input type="radio" name="sex" value="муж">мужской<br>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Возраст:</label>
+        <div>
+            <input type="radio" name="age" value="<18"><18<br>
+            <input type="radio" name="age" value="18-25">18-25<br>
+            <input type="radio" name="age" value="26-40">26-40<br>
+            <input type="radio" name="age" value=">40">>40<br>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Место жительства:</label>
+        <div>
+            <input type="radio" name="home" value="Москва">Москва<br>
+            <input type="radio" name="home" value="Санкт-Петербург">Санкт-Петербург<br>
+            <input type="radio" name="home" value="Другое">Другое<br>
+        </div>
+    </div>
+    <div>
+        <input type="submit" class="btn btn-primary" value="Отправить">
+    </div>
+</form>
+</body>
+</html>

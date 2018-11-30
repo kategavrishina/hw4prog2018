@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+
+<body class="col-3-sm">
+    <div class="container">
+    <h1>Заполните, пожалуйста, анкету:</h1>
+	<form>
+        <div class="form-group">
+            <label>Фамилия:</label>
+            <div>
+                <input required type="text" name="lastname"
+                       placeholder="Введите фамилию" maxlength="20">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Имя:</label>
+            <div>
+                <input required type="text" name="firstname"
+                       placeholder="Введите имя" maxlength="20">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Ваш пол:</label>
+            <div>
+                <input type="radio" name="sex" value="жен">женский<br>
+			    <input required type="radio" name="sex" value="муж">мужской<br>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Ваш возраст:</label>
+            <div>
+                <input type="radio" name="age" value="<18"><18<br>
+			    <input type="radio" name="age" value="18-25">18-25<br>
+			    <input type="radio" name="age" value="26-40">26-40<br>
+			    <input required type="radio" name="age" value=">40">>40<br>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Место жительства:</label>
+            <div>
+                <input type="radio" name="home" value="Москва">Москва<br>
+                <input type="radio" name="home" value="Санкт-Петербург">Санкт-Петербург<br>
+                <input required type="radio" name="home" value="Другое">Другое<br>
+            </div>
+        </div>
+        <div class="image">
+        <label><img src="{{url_for('static', filename='cakes.jpg')}}"
+					width="420" height="300" class="img-thumbnail"
+                    alt="Cakes on the plate"/></label>
+        </div>
+        <div class="form-group">
+            <label>Что Вы видите на
+                фото?</label>
+            <div>
+                <input type="radio" name="photo" value="Капкейки">Капкейки<br>
+                <input type="radio" name="photo" value="Кексы">Кексы<br>
+                <input type="radio" name="photo" value="Маффины">Маффины<br>
+                <input required type="radio" name="photo" value="Другое">Другое<br>
+            </div>
+        </div>
+		<br>
+        <div>
+            <input type="submit" class="btn btn-primary" value="Отправить">
+        </div>
+	</form>
+    </div>
+</body>
+
+</html>
