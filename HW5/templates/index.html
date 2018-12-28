@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Поиск</h1>
+    <h4>Здесь Вы можете найти интересующие Вас вхождения в газете <a href="http://www.permoboz.ru/">"Пермский
+        обозреватель"</a>.</h4>
+    <p>Вы можете ввести запрос в текстовое поле, если хотите найти все формы
+        слова, а также конкретные фразы в корпусе.</p>
+    </div>
+    <div>
+    <form class="form-horizontal container">
+        <div class="form-group container">
+            <label>Запрос:</label>
+            <div>
+                <input type="text" name="query"
+                       placeholder="Введите запрос" maxlength="30">
+            </div>
+        </div>
+        <br>
+        <div>
+            <input type="submit" class="btn btn-primary" value="Поиск">
+        </div>
+    </form>
+    </div>
+    {% if result == 1 %}
+    <div class="container">
+        <h3>Результаты для запроса <em>"{{ query }}"</em>:</h3>
+        {% if nf == 1 %}
+        <p>Извините, по Вашему запросу ничего не найдено.</p>
+        {% else %}
+        <ul>
+            {% for i in lst %}
+            <li><a href='{{ i[0] }}'>{{ i[0] }}</a><br>
+                {{ i[1] }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
